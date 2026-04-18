@@ -1,0 +1,8 @@
+# health-classification
+The Smart Health Monitoring System is an IoT and Machine Learning–based solution designed to provide real-time health analysis using non-invasive sensors and image processing. The system collects key physiological parameters such as blood oxygen saturation (SpO₂), body temperature, and heart rate using sensors like MLX90614 and MAX30100/MAX30102. In addition, a Raspberry Pi Camera is used to capture images for supplementary analysis, enabling a more comprehensive health assessment.
+
+A Raspberry Pi serves as the central processing unit, integrating sensor data acquisition, image capture, and machine learning inference. The system employs a multi-model architecture, where individual models analyze specific parameters such as temperature (fever detection), oxygen level, and heart rate. These outputs are then combined and processed by a meta-model to predict possible health conditions, including Asthma, Diabetes Mellitus, Heart Disease, Hypertension, or a Healthy state.
+
+To improve efficiency, an initial screening is performed using sensor and image models. If an abnormal condition is detected (based on a threshold score), the system activates detailed analysis using specialized models. Additionally, the system estimates blood pressure condition (normal or abnormal) indirectly using correlated parameters, eliminating the need for a dedicated BP sensor.
+
+This system provides a cost-effective, portable, and intelligent healthcare monitoring solution, making it suitable for remote health monitoring, early disease detection, and IoT-based medical applications.

@@ -1,0 +1,21 @@
+Raspberry Pi
+
+Introduction:
+Raspberry Pi is a small, affordable single-board computer used for IoT and embedded systems.
+
+Features:
+- Quad-core processor
+- GPIO pins for sensor connection
+- Supports Python programming
+- WiFi and Bluetooth connectivity
+
+Working in Project:
+- Collects data from sensors
+- Runs machine learning models
+- Processes camera input
+- Displays health results
+
+Advantages:
+- Low cost
+- Easy to use
+- Powerful for ML and IoT applications

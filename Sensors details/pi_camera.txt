@@ -1,0 +1,20 @@
+Raspberry Pi Camera Module
+
+Introduction:
+The Raspberry Pi Camera is used to capture images and videos for image-based analysis.
+
+Features:
+- High-resolution image capture
+- Supports real-time video
+- Easy integration with Raspberry Pi
+- Works with OpenCV
+
+Working in Project:
+- Captures patient image
+- Sends image to ML model
+- Helps in disease detection
+
+Applications:
+- Face detection
+- Medical image analysis
+- Smart monitoring systems

@@ -1,0 +1,16 @@
+MLX90614 Infrared Temperature Sensor
+
+Introduction:
+The MLX90614 is a non-contact infrared temperature sensor used to measure body temperature without physical contact. It is widely used in healthcare systems for safe and hygienic temperature monitoring.
+
+Working Principle:
+It detects infrared radiation emitted by objects and converts it into temperature readings using built-in signal processing.
+
+Key Features:
+- Non-contact temperature measurement
+- High accuracy (±0.5°C)
+- I2C communication
+- Suitable for medical applications
+
+Application in Project:
+Used to measure body temperature of the patient in real-time.

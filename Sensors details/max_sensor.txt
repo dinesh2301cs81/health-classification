@@ -1,0 +1,16 @@
+MAX30100 / MAX30102 Sensor
+
+Introduction:
+The MAX30100/MAX30102 is a pulse oximeter and heart rate sensor used to measure SpO2 (oxygen level) and heart rate.
+
+Working Principle:
+It uses red and infrared LEDs to measure blood oxygen saturation based on light absorption in blood.
+
+Key Features:
+- Measures SpO2 and heart rate
+- Low power consumption
+- I2C interface
+- Compact and wearable
+
+Application in Project:
+Used to monitor oxygen saturation and heart rate of the patient continuously.

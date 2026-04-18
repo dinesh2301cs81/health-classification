@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IoT Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#0f172a;color:white;font-family:Arial;margin:0}
+header{text-align:center;padding:15px;background:#020617}
+.container{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:15px;padding:15px}
+.card{background:#1e293b;padding:15px;border-radius:10px;text-align:center}
+.value{font-size:24px;color:#22c55e}
+img{width:100%;border-radius:10px}
+</style>
+</head>
+<body>
+
+<header>Smart IoT Dashboard</header>
+
+<div class="container">
+<div class="card"><h2>Camera</h2><img src="/video"></div>
+<div class="card"><h2>Prediction</h2><div id="pred" class="value">--</div></div>
+<div class="card"><h2>Heart</h2><div id="heart" class="value">--</div></div>
+<div class="card"><h2>Temp</h2><div id="temp" class="value">--</div></div>
+<div class="card"><h2>Time</h2><div id="time" class="value">--</div></div>
+</div>
+
+<script>
+async function update(){
+ let r = await fetch('/data');
+ let d = await r.json();
+ document.getElementById('pred').innerText=d.prediction;
+ document.getElementById('heart').innerText=d.heart_rate+' BPM';
+ document.getElementById('temp').innerText=d.temperature+' °C';
+ document.getElementById('time').innerText=d.timestamp;
+}
+setInterval(update,1000);
+update();
+</script>
+
+</body>
+</html>
